@@ -1,7 +1,7 @@
 <template lang="pug">
 	mdb-navbar(light)
 		mdb-navbar-brand
-			img.logo(src="@/assets/images/logo-latin.png" alt="Responsive image")
+			img.logo(src="@/assets/images/logo-latin.png" alt="Logo de pagina web")
 		mdb-navbar-toggler
 			mdb-navbar-nav(right)
 				mdb-dropdown

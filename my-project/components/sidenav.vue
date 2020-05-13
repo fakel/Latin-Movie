@@ -8,28 +8,28 @@
 			.content-items
 				.item-flex(@click="parraf=''")
 					p Todos
-					img(src="https://img.icons8.com/color/48/000000/america.png")
+					img(src="https://img.icons8.com/color/48/000000/america.png" alt="Imagen de America")
 				.item-flex(@click="parraf='Peru'")
 					p Perú
-					img(src="https://img.icons8.com/color/48/000000/peru.png")
+					img(src="https://img.icons8.com/color/48/000000/peru.png" alt="Bandera de Peru")
 				.item-flex(@click="parraf='Colombia'")
 					p Colombia
-					img(src="https://img.icons8.com/color/48/000000/colombia.png")
+					img(src="https://img.icons8.com/color/48/000000/colombia.png" alt="Bandera de Colombia")
 				.item-flex(@click="parraf='Brazil'")
 					p Brasil
-					img(src="https://img.icons8.com/color/48/000000/brazil.png")
+					img(src="https://img.icons8.com/color/48/000000/brazil.png" alt="Bandera de Brazil")
 				.item-flex(@click="parraf='Chile'")
 					p Chile
-					img(src="https://img.icons8.com/color/48/000000/chile.png")
+					img(src="https://img.icons8.com/color/48/000000/chile.png" alt="Bandera de Chile")
 				.item-flex(@click="parraf='Argentina'")
 					p Argentina
-					img(src="https://img.icons8.com/color/48/000000/argentina.png")
+					img(src="https://img.icons8.com/color/48/000000/argentina.png" alt="Bandera de Argentina")
 				.item-flex(@click="parraf='Mexico'")
 					p México
-					img(src="https://img.icons8.com/color/48/000000/mexico.png")
+					img(src="https://img.icons8.com/color/48/000000/mexico.png" alt="Bandera de Mexico")
 				.item-flex(@click="parraf='Venezuela'")
 					p Venezuela
-					img(src="https://img.icons8.com/color/48/000000/venezuela.png")
+					img(src="https://img.icons8.com/color/48/000000/venezuela.png" alt="Bandera de Venezuela")
 	div.classGrey
 	.ContentNav
 		.divContent
@@ -75,9 +75,9 @@ export default {
 				'Whisky',
 				'25 Watts',
 				'Anina',
-				 'Clever',
-				 'Ojos de madera',
-				 'El Candidato',
+				'Clever',
+				'Ojos de madera',
+				'El Candidato',
 				'La vendedora de rosas',
 				'La estrategia del caracol',
 				'Zama',

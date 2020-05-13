@@ -7,13 +7,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
 import Header from '../components/header';
 import sideNav from '../components/sidenav';
 
 export default {
 	components: {
-		Logo,
 		Header,
 		sideNav
 	}

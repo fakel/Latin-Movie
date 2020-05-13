@@ -9,11 +9,11 @@
 				mdb-card-image(:src="item.Poster")
 				mdb-card-body
 					a(:href="`https://www.imdb.com/title/${item.imdbID}/`")
-						img.logo-imdb.z-depth-3(src="@/assets/images/logo-imdb.png" )
+						img.logo-imdb.z-depth-3(src="@/assets/images/logo-imdb.png" alt="Logo Imdb")
 					mdb-card-title {{item.Title}}
 						span ({{item.Year}})
 					mdb-card-text
-						img.img-card(src="@/assets/images/star.png")
+						img.img-card(src="@/assets/images/star.png" alt="Estrella para rating")
 						span.rating {{item.imdbRating}}
 						span /10
 				mdb-btn.see-btn(color="primary" tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver
@@ -23,11 +23,11 @@
 				mdb-card-image(:src="item.Poster")
 				mdb-card-body
 					a(:href="`https://www.imdb.com/title/${item.imdbID}/`")
-						img.logo-imdb.z-depth-3(src="@/assets/images/logo-imdb.png" )
+						img.logo-imdb.z-depth-3(src="@/assets/images/logo-imdb.png" alt="Logo Imdb")
 					mdb-card-title {{item.Title}}
 						span ({{item.Year}})
 					mdb-card-text
-						img.img-card(src="@/assets/images/star.png")
+						img.img-card(src="@/assets/images/star.png" alt="Estrella para rating")
 						span.rating {{item.imdbRating}}
 						span /10
 				mdb-btn.see-btn(color="primary" tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver
