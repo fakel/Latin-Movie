@@ -1,7 +1,11 @@
 <template lang="pug">
 	mdb-navbar(light)
 		mdb-navbar-brand
-			img.logo(src="@/assets/images/logo-latin.png" alt="Logo de pagina web")
+			.brand
+				h1 LATIN M
+				span
+					img.logo(src="@/assets/images/logo-latin.png" alt="Logo de pagina web")
+				h1 VIE
 		mdb-navbar-toggler
 			mdb-navbar-nav(right)
 				mdb-dropdown

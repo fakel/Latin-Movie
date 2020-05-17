@@ -1,9 +1,10 @@
 <template lang="pug">
 	div.flex
 		.content-top
-			h1 hola
+			h1.title-top |&nbsp
+				span Recomendados {{type}}
 		.content-middle
-			p {{type}}
+			//-p {{type}}
 		.content-bottom(v-if="type === ''")
 			mdb-card.zoom.hoverable(v-for="(item, index) in mov" :key="item.id")
 				mdb-card-image(:src="item.Poster")
@@ -16,8 +17,8 @@
 						img.img-card(src="@/assets/images/star.png" alt="Estrella para rating")
 						span.rating {{item.imdbRating}}
 						span /10
-				mdb-btn.see-btn(color="primary" tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver
-					mdb-icon(icon="eye" class="mr-1")
+					mdb-btn.see-btn( tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver película
+						mdb-icon(icon="eye" class="mr-1")
 		.content-bottom(v-else)
 			mdb-card.zoom.hoverable(v-for="(item, index) in getSelect" :key="item.id")
 				mdb-card-image(:src="item.Poster")
@@ -30,8 +31,8 @@
 						img.img-card(src="@/assets/images/star.png" alt="Estrella para rating")
 						span.rating {{item.imdbRating}}
 						span /10
-				mdb-btn.see-btn(color="primary" tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver
-					mdb-icon(icon="eye" class="mr-1")
+					mdb-btn.see-btn( tag="a" role="button" :href="`https://www.imdb.com/title/${item.imdbID}/`") Ver película
+						mdb-icon(icon="eye" class="mr-1")
 </template>
 <script>
 import Axios from "axios";
