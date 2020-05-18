@@ -97,7 +97,7 @@ export default {
 		this.peliculas.forEach(ele => {
 			this.$axios({
 				methods:"GET",
-				url: `http://www.omdbapi.com/?t=${ele.split(' ').join('+').toLowerCase()+'&apikey=8f7b2287'}`,
+				url: `https://www.omdbapi.com/?t=${ele.split(' ').join('+').toLowerCase()+'&apikey=8f7b2287'}`,
 				headers:{
 					Accept: "application/json",
 					"Content-Type": "application/json"
