@@ -1,11 +1,14 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/<Latin-Movie>/'
-  }
-} : {}
+//const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//  router: {
+//    base: '/Latin-Movie/'
+//  }
+//} : {}
 
 export default {
-	mode: 'universal',
+	mode: 'spa',
+	router: {
+		base: '/Latin-Movie/'
+	},
 	/*
 	** Headers of the page
 	*/
@@ -44,7 +47,6 @@ export default {
 	/*
 	** Nuxt.js modules
 	*/
-	...routerBase,
 	modules: [
 		// Doc: https://bootstrap-vue.js.org
 		// 'bootstrap-vue/nuxt',
